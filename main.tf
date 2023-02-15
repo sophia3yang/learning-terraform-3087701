@@ -47,7 +47,7 @@ module "blog_sg" {
   version = "4.17.1"
   name ="blog_new"
   
-  vpc_id = module.vpc.public_subnets[0]
+  vpc_id = module.vpc.vpc_id
   
   
   ingress_rules        = ["https-443-tcp"]
