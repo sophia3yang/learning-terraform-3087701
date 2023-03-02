@@ -67,7 +67,7 @@ module "alb" {
 
   vpc_id             = module.vpc.vpc_id
   subnets            = module.vpc.public_subnets
-  security_groups    = module.blog_sg.security_groups.id
+  security_groups    = module.blog_sg.id
 
   access_logs = {
     bucket = "dev-alb-logs"
