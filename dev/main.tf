@@ -1,3 +1,3 @@
-module "call_blog"{
-  source = "../moudles/blog
+module "call_blog" {
+  source = "../moudles/blog"
 }
